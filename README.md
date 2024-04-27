@@ -34,20 +34,30 @@ Create a .env file in the backend directory.
 MONGODB_URI: MongoDB connection URI
 
 JWT_SECRET: Secret key for JWT authentication
+
 Run the development server:
 Backend: cd backend && npm start
 Frontend: cd frontend && npm start
+
 Access the application at http://localhost:3000 in your web browser.
+
 Technologies Used
+
 MongoDB: NoSQL database for storing user information and notes.
+
 Express.js: Web application framework for Node.js, used for building the backend server.
+
 React.js: JavaScript library for building user interfaces, used for the frontend.
+
 Node.js: JavaScript runtime environment for executing server-side code.
+
 JWT (JSON Web Tokens): Used for user authentication and authorization.
-Bootstrap: Frontend framework for designing responsive and mobile-first websites.
+
 Axios: HTTP client for making API requests from the frontend to the backend.
+
+
 Folder Structure
-csharp
+
 Copy code
 
 
