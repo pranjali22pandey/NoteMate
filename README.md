@@ -1,87 +1,70 @@
-# NoteMate
-Welcome to Notemake App! This is a simple note-taking application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Notemake allows users to create, view, edit, and delete notes conveniently.
+# Getting Started with Create React App
 
-*Features*
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Create Notes: Users can easily create new notes with a title, content, and optional tags for organization.
+In the project directory, you can run:
 
-View Notes: Users can view all their notes on the dashboard, sorted by the most recent.
+### `npm start`
 
-Edit Notes: Users can edit the title, content, and tags of their existing notes.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Delete Notes: Users can delete unwanted notes.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Responsive Design: The application is designed to work seamlessly across various devices and screen sizes.
+### `npm test`
 
-**Installation**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Clone the repository: git clone https://github.com/pranjali22pandey/NoteMate.git
+### `npm run build`
 
-Navigate to the project directory: cd notemake-app
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Install dependencies:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Backend: cd backend && npm install
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Frontend: cd frontend && npm install
+### `npm run eject`
 
-Set up environment variables:
-Create a .env file in the backend directory.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-*Define the following variables:*
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-MONGODB_URI: MongoDB connection URI
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-JWT_SECRET: Secret key for JWT authentication
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Run the development server:
-Backend: cd backend && npm start
-Frontend: cd frontend && npm start
+## Learn More
 
-Access the application at http://localhost:3000 in your web browser.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Technologies Used
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-MongoDB: NoSQL database for storing user information and notes.
+### Code Splitting
 
-Express.js: Web application framework for Node.js, used for building the backend server.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-React.js: JavaScript library for building user interfaces, used for the frontend.
+### Analyzing the Bundle Size
 
-Node.js: JavaScript runtime environment for executing server-side code.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-JWT (JSON Web Tokens): Used for user authentication and authorization.
+### Making a Progressive Web App
 
-Axios: HTTP client for making API requests from the frontend to the backend.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
-Folder Structure
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Copy code
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+### `npm run build` fails to minify
 
-
-notemake-app/
-│
-├── backend/                  # Backend server
-│   ├── config/               # Configuration files
-│   ├── controllers/          # Request handlers
-│   ├── models/               # Mongoose models
-│   ├── routes/               # API routes
-│   └── ...
-│
-└── frontend/                 # Frontend React app
-    ├── public/               # Static files
-    ├── src/                  # Source files
-    │   ├── components/       # React components
-    │   ├── pages/            # Page components
-    │   ├── services/         # API service functions
-    │   └── ...
-    └── ...
-Contributing
-Contributions are welcome! Feel free to open issues and pull requests to suggest improvements, report bugs, or add new features.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
