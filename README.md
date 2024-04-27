@@ -1,22 +1,22 @@
 # NoteMate
 Welcome to Notemake App! This is a simple note-taking application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Notemake allows users to create, view, edit, and delete notes conveniently.
 
-Features
+*Features*
 
 Create Notes: Users can easily create new notes with a title, content, and optional tags for organization.
 View Notes: Users can view all their notes on the dashboard, sorted by the most recent.
 Edit Notes: Users can edit the title, content, and tags of their existing notes.
 Delete Notes: Users can delete unwanted notes.
 Responsive Design: The application is designed to work seamlessly across various devices and screen sizes.
-Installation
-Clone the repository: git clone https://github.com/yourusername/notemake-app.git
+**Installation**
+Clone the repository: git clone https://github.com/pranjali22pandey/NoteMate.git
 Navigate to the project directory: cd notemake-app
 Install dependencies:
 Backend: cd backend && npm install
 Frontend: cd frontend && npm install
 Set up environment variables:
 Create a .env file in the backend directory.
-Define the following variables:
+*Define the following variables:*
 MONGODB_URI: MongoDB connection URI
 JWT_SECRET: Secret key for JWT authentication
 Run the development server:
