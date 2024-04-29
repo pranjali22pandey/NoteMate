@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 https://noteematee.netlify.app/
 
 **Render Link**
-https://notemate.onrender.com/
+https://notemate-1.onrender.com/
 
 ### `npm run build` fails to minify
 
