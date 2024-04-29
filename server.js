@@ -20,12 +20,12 @@ const Note = mongoose.model("Note", {
     content: String,
 });
 
-// Listen for successful MongoDB connection
+// Handle MongoDB connection success
 mongoose.connection.on("connected", () => {
     console.log("Connected to MongoDB Atlas");
 });
 
-// Listen for MongoDB connection errors
+// Handle MongoDB connection errors
 mongoose.connection.on("error", (err) => {
     console.error("MongoDB connection error:", err);
 });
@@ -40,7 +40,8 @@ app.get("/api/notes", async (req, res) => {
         const notes = await Note.find();
         res.json(notes);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.error("Error fetching notes:", error);
+        res.status(500).json({ message: "Error fetching notes" });
     }
 });
 
@@ -57,7 +58,8 @@ app.put("/api/notes/:id", async (req, res) => {
         );
         res.json(updatedNote);
     } catch (error) {
-        res.status(404).json({ message: "Note not found" });
+        console.error("Error updating note:", error);
+        res.status(500).json({ message: "Error updating note" });
     }
 });
 
@@ -69,7 +71,8 @@ app.delete("/api/notes/:id", async (req, res) => {
         await Note.findByIdAndDelete(noteId);
         res.json({ message: "Note deleted successfully" });
     } catch (error) {
-        res.status(404).json({ message: "Note not found" });
+        console.error("Error deleting note:", error);
+        res.status(500).json({ message: "Error deleting note" });
     }
 });
 
@@ -82,7 +85,8 @@ app.post("/api/notes", async (req, res) => {
         const newNote = await note.save();
         res.status(201).json(newNote);
     } catch (error) {
-        res.status(400).json({ message: error.message });
+        console.error("Error creating note:", error);
+        res.status(500).json({ message: "Error creating note" });
     }
 });
 
